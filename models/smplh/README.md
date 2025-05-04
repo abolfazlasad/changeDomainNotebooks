@@ -1,0 +1,1 @@
+tar xf smplh.tar.xz
