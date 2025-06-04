@@ -1,3 +1,13 @@
+# after that
+# - clear transition (pose mode)
+# - set poses
+# - duplicate and apply mesh (object mode)
+# - apply as reset pose (pose mode)
+# - reture to object mode
+# - save
+
+
+
 import bpy
 import mixamo_rig
 

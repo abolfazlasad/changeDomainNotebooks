@@ -4,14 +4,14 @@ import rokoko
 
 
 # for running once
-CHARACTER_FILE_PATH = "../data/characters-mixamo-processed/Abe-T-Pose.blend"
-ACTION_FILE_PATH = "../data/action-mocap/proud_01_000.bvh"
-OUTPUT_FILE_PATH = "../output/3.preview_render_animate_with_mocap_proud_01_000.mp4"
+# CHARACTER_FILE_PATH = "../data/characters-mixamo-processed/Abe-T-Pose.blend"
+# ACTION_FILE_PATH = "../data/action-mocap/proud_01_000.bvh"
+# OUTPUT_FILE_PATH = "../output/3.preview_render_animate_with_mocap_proud_01_000.mp4"
 
 # for running with env var
-# CHARACTER_FILE_PATH = os.environ.get("CHARACTER", "../data/characters-processed/Abe-T-Pose.blend")
-# ACTION_FILE_PATH = os.environ.get("ACTION", "../data/action-mocap/proud_01_000.bvh")
-# OUTPUT_FILE_PATH = os.environ.get("OUTPUT", "../output/3.preview_render_animate_with_mocap_proud_01_000.mp4")
+CHARACTER_FILE_PATH = os.environ.get("MY_CHARACTER", "../data/characters-mixamo-processed/Abe-T-Pose.blend")
+ACTION_FILE_PATH = os.environ.get("MY_ACTION", "../data/action-mocap/proud_01_000.bvh")
+OUTPUT_FILE_PATH = os.environ.get("MY_OUTPUT", "../output/3.preview_render_animate_with_mocap_proud_01_000.mp4")
 
 
 def clear_all_objects():
@@ -83,6 +83,16 @@ def setup_camera():
     bpy.context.scene.camera = camera
 
 setup_camera()
+
+
+
+# Set a brighter world background (light gray or white)
+bpy.context.scene.world.use_nodes = True
+bg = bpy.context.scene.world.node_tree.nodes['Background']
+bg.inputs[0].default_value = (0.7, 0.7, 0.7, 1.0)  # White (R, G, B, Alpha)
+bg.inputs[1].default_value = 1.0  # Strength (increase to make it brighter)
+
+
 
 # Set low-quality render settings
 scene = bpy.context.scene
