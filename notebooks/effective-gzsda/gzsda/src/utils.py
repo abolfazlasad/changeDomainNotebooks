@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader, Dataset
 
 from src.models import VAE2, Classifier
 
-def get_args(trialIndex, sourceDomainIndex, targetDomainIndex):
+def get_args(trialIndex, sourceDomainIndex, targetDomainIndex, input_dim=2048):
     sys.argv = [
         '',  # argv[0] is the script name; keep it as ''
         '--sourceDomainIndex', str(sourceDomainIndex),
@@ -23,8 +23,8 @@ def get_args(trialIndex, sourceDomainIndex, targetDomainIndex):
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--learning_rate", type=float, default=0.001)
-    parser.add_argument("--encoder_layer_sizes", type=list, default=[2048, 512])
-    parser.add_argument("--decoder_layer_sizes", type=list, default=[512, 2048])
+    parser.add_argument("--encoder_layer_sizes", type=list, default=[input_dim, 512])
+    parser.add_argument("--decoder_layer_sizes", type=list, default=[512, input_dim])
     parser.add_argument("--latent_size", type=int, default=64)
     parser.add_argument("--print_every", type=int, default=100)
     parser.add_argument("--sourceDomainIndex", type=int, default=0)
@@ -71,8 +71,10 @@ def test_model(model,dataset,dataloader,device):
     acc = np.mean(acc_per_class)
     acc_seen = np.mean(acc_per_class[dataset.unseenClass_B==0])
     acc_unseen = np.mean(acc_per_class[dataset.unseenClass_B==1])
-    print('per-class acc:{:2.4f}, seen acc:{:2.4f}, unseen acc:{:2.4f}'.format(acc,acc_seen,acc_unseen))
-    return acc_per_class,acc,acc_seen,acc_unseen
+    h = acc_seen * acc_unseen * 2 / (acc_seen + acc_unseen)
+
+    print('per-class acc:{:2.4f}, seen acc:{:2.4f}, unseen acc:{:2.4f}, H:{:2.4f}'.format(acc,acc_seen,acc_unseen,h))
+    return acc_per_class, acc, acc_seen, acc_unseen
 
 def loss_fn2(
         recon_xS, recon_xS2, xS,
@@ -181,8 +183,8 @@ def get_trained_VAE_with_domain_classifier(data_loaders, args, device):
 
 
 #TODO merge these functions
-def get_trained_classifier(data_loaders, vae, NUM_LABELS, device, num_epochs = 50, change_policy_epoch = 50):
-    classifier = Classifier(input_dim=2048,num_labels=NUM_LABELS).to(device) # train and test a classifier
+def get_trained_classifier(data_loaders, vae, NUM_LABELS, device, num_epochs = 50, change_policy_epoch = 50, input_dim=2048):
+    classifier = Classifier(input_dim=input_dim,num_labels=NUM_LABELS).to(device) # train and test a classifier
     optimizer_cls = torch.optim.Adam(classifier.parameters(), lr=0.01)
     scheduler_cls = torch.optim.lr_scheduler.StepLR(optimizer_cls, step_size=25, gamma=0.1)
     for epoch in range(num_epochs):
@@ -209,8 +211,8 @@ def get_trained_classifier(data_loaders, vae, NUM_LABELS, device, num_epochs = 5
         scheduler_cls.step()
     return classifier
 
-def get_trained_classifier_Base(data_loaders, NUM_LABELS, device):
-    classifier = Classifier(input_dim=2048,num_labels=NUM_LABELS).to(device) # train and test a classifier
+def get_trained_classifier_Base(data_loaders, NUM_LABELS, device, input_dim=2048):
+    classifier = Classifier(input_dim=input_dim,num_labels=NUM_LABELS).to(device) # train and test a classifier
     optimizer_cls = torch.optim.Adam(classifier.parameters(), lr=0.01)
     scheduler_cls = torch.optim.lr_scheduler.StepLR(optimizer_cls, step_size=25, gamma=0.1)
     num_epochs = 50 # TODO remove
@@ -252,7 +254,7 @@ def prepare_report(results):
         f"Unseen:   {mean_unseen:.2f} ± {sem_unseen:.2f}" + "\n"
         f"H-mean:   {mean_h:.2f} ± {sem_h:.2f}")
 
-def run_all_senario(main, DOMAIN_SET,):
+def run_all_senario(main, DOMAIN_SET, input_dim=2048, num_trial=5):
     senario_report_map = dict()
     for s in range(len(DOMAIN_SET)):
         for t in range(len(DOMAIN_SET)):
@@ -261,8 +263,8 @@ def run_all_senario(main, DOMAIN_SET,):
             senario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])
             print(senario)
             results = []
-            for i in range(5):
-                args = get_args(trialIndex=i, sourceDomainIndex=s, targetDomainIndex=t)
+            for i in range(num_trial):
+                args = get_args(trialIndex=i, sourceDomainIndex=s, targetDomainIndex=t, input_dim=input_dim)
                 res = main(args)
                 results.append(res)
             report = prepare_report(results)
