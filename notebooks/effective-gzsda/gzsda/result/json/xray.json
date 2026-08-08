@@ -1,0 +1,18 @@
+{
+  "base": {
+    "regu -> xray": "Seen:     84.21 \u00b1 2.22\nUnseen:   2.56 \u00b1 0.49\nH-mean:   4.94 \u00b1 0.92",
+    "xray -> regu": "Seen:     94.66 \u00b1 1.00\nUnseen:   20.41 \u00b1 4.23\nH-mean:   32.73 \u00b1 6.05"
+  },
+  "CCVAE": {
+    "regu -> xray": "Seen:     77.56 \u00b1 2.11\nUnseen:   29.50 \u00b1 2.95\nH-mean:   42.50 \u00b1 3.44",
+    "xray -> regu": "Seen:     90.67 \u00b1 1.01\nUnseen:   52.01 \u00b1 2.86\nH-mean:   65.88 \u00b1 2.29"
+  },
+  "our_GRE": {
+    "regu -> xray": "Seen:     72.31 \u00b1 2.45\nUnseen:   32.77 \u00b1 1.47\nH-mean:   45.05 \u00b1 1.68",
+    "xray -> regu": "Seen:     86.87 \u00b1 0.75\nUnseen:   55.23 \u00b1 2.16\nH-mean:   67.41 \u00b1 1.54"
+  },
+  "our0": {
+    "regu -> xray": "Seen:     74.19 \u00b1 2.29\nUnseen:   33.84 \u00b1 3.04\nH-mean:   46.23 \u00b1 3.23",
+    "xray -> regu": "Seen:     87.35 \u00b1 1.03\nUnseen:   54.64 \u00b1 2.74\nH-mean:   67.02 \u00b1 1.96"
+  }
+}

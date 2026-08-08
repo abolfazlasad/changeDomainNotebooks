@@ -1,0 +1,34 @@
+{
+  "base": {
+    "A -> D": "Seen:     92.32 \u00b1 1.37\nUnseen:   67.06 \u00b1 4.20\nH-mean:   77.30 \u00b1 2.48",
+    "A -> W": "Seen:     91.83 \u00b1 0.44\nUnseen:   58.19 \u00b1 3.21\nH-mean:   71.07 \u00b1 2.47",
+    "D -> A": "Seen:     87.29 \u00b1 1.17\nUnseen:   38.12 \u00b1 1.18\nH-mean:   53.02 \u00b1 1.17",
+    "D -> W": "Seen:     99.50 \u00b1 0.20\nUnseen:   93.85 \u00b1 1.36\nH-mean:   96.57 \u00b1 0.75",
+    "W -> A": "Seen:     87.80 \u00b1 1.11\nUnseen:   37.29 \u00b1 1.34\nH-mean:   52.27 \u00b1 1.25",
+    "W -> D": "Seen:     99.46 \u00b1 0.25\nUnseen:   98.55 \u00b1 0.55\nH-mean:   99.00 \u00b1 0.19"
+  },
+  "CCVAE": {
+    "A -> D": "Seen:     87.73 \u00b1 2.36\nUnseen:   87.48 \u00b1 2.46\nH-mean:   87.42 \u00b1 1.37",
+    "A -> W": "Seen:     87.54 \u00b1 1.09\nUnseen:   82.67 \u00b1 1.95\nH-mean:   84.95 \u00b1 0.95",
+    "D -> A": "Seen:     83.59 \u00b1 1.60\nUnseen:   58.52 \u00b1 1.63\nH-mean:   68.70 \u00b1 0.66",
+    "D -> W": "Seen:     97.20 \u00b1 0.56\nUnseen:   94.89 \u00b1 1.33\nH-mean:   96.00 \u00b1 0.52",
+    "W -> A": "Seen:     83.23 \u00b1 1.57\nUnseen:   60.25 \u00b1 1.93\nH-mean:   69.73 \u00b1 0.91",
+    "W -> D": "Seen:     98.34 \u00b1 0.30\nUnseen:   99.30 \u00b1 0.30\nH-mean:   98.82 \u00b1 0.11"
+  },
+  "our0": {
+    "A -> D": "Seen:     87.26 \u00b1 2.34\nUnseen:   88.32 \u00b1 2.05\nH-mean:   87.63 \u00b1 1.19",
+    "A -> W": "Seen:     85.32 \u00b1 1.23\nUnseen:   82.57 \u00b1 2.36\nH-mean:   83.79 \u00b1 0.94",
+    "D -> A": "Seen:     80.97 \u00b1 1.59\nUnseen:   63.79 \u00b1 1.96\nH-mean:   71.18 \u00b1 0.61",
+    "D -> W": "Seen:     94.06 \u00b1 1.83\nUnseen:   96.06 \u00b1 1.14\nH-mean:   94.96 \u00b1 0.42",
+    "W -> A": "Seen:     80.56 \u00b1 1.78\nUnseen:   62.61 \u00b1 1.88\nH-mean:   70.28 \u00b1 0.59",
+    "W -> D": "Seen:     97.66 \u00b1 0.38\nUnseen:   99.76 \u00b1 0.15\nH-mean:   98.70 \u00b1 0.16"
+  },
+  "our_GRE": {
+    "A -> D": "Seen:     85.60 \u00b1 2.53\nUnseen:   85.66 \u00b1 2.33\nH-mean:   85.44 \u00b1 1.39",
+    "A -> W": "Seen:     85.19 \u00b1 1.30\nUnseen:   83.15 \u00b1 1.38\nH-mean:   84.10 \u00b1 0.81",
+    "D -> A": "Seen:     81.08 \u00b1 1.55\nUnseen:   63.30 \u00b1 1.72\nH-mean:   70.95 \u00b1 0.53",
+    "D -> W": "Seen:     94.13 \u00b1 1.41\nUnseen:   95.98 \u00b1 0.95\nH-mean:   94.99 \u00b1 0.36",
+    "W -> A": "Seen:     80.54 \u00b1 1.93\nUnseen:   62.60 \u00b1 2.59\nH-mean:   70.16 \u00b1 0.95",
+    "W -> D": "Seen:     97.25 \u00b1 0.37\nUnseen:   99.76 \u00b1 0.15\nH-mean:   98.49 \u00b1 0.13"
+  }
+}
