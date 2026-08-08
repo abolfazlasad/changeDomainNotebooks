@@ -1,3 +1,18 @@
 MotionCLIP/data/*
 MotionCLIP/exps/*
 MotionCLIP/models/*
+output_frames/*
+
+
+inpDataset*.npz
+
+
+# current notebooks ignore
+5.*.ipynb
+6.*.ipynb
+7.*.ipynb
+output/7.*mp4
+8.*.ipynb
+9.*.ipynb
+10.*.ipynb
+11.*.ipynb
