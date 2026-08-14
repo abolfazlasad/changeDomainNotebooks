@@ -1,0 +1,15 @@
+INPUT:
+  SIZE: (96, 96)
+  TRANSFORMS: ["random_flip", "normalize"]
+
+DATASET:
+  NAME: "miniDomainNet"
+  SOURCE_DOMAINS: ["clipart"]
+  TARGET_DOMAINS: ["painting"]
+  # TARGET_DOMAINS: ["real"]
+  # TARGET_DOMAINS: ["sketch"]
+# you can modify the code to explore four domains
+
+MODEL:
+  BACKBONE:
+    NAME: "ViT-B/16"
