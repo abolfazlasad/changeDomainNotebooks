@@ -68,5 +68,47 @@
     "RealWorld -> Art": "Seen:     49.40 \u00b1 1.45\nUnseen:   60.59 \u00b1 0.90\nH-mean:   54.33 \u00b1 0.69",
     "RealWorld -> Clipart": "Seen:     63.20 \u00b1 0.87\nUnseen:   45.67 \u00b1 1.41\nH-mean:   52.92 \u00b1 0.75",
     "RealWorld -> Product": "Seen:     79.46 \u00b1 0.90\nUnseen:   77.46 \u00b1 0.82\nH-mean:   78.42 \u00b1 0.50"
+  },
+  "our_TUPL_real_plus_src2tgt": {
+    "Art -> Clipart": "Seen:     53.96 \u00b1 0.89\nUnseen:   29.97 \u00b1 0.97\nH-mean:   38.52 \u00b1 1.01",
+    "Art -> Product": "Seen:     72.96 \u00b1 0.88\nUnseen:   49.25 \u00b1 1.11\nH-mean:   58.79 \u00b1 1.03",
+    "Art -> RealWorld": "Seen:     67.28 \u00b1 1.03\nUnseen:   54.23 \u00b1 2.02\nH-mean:   60.01 \u00b1 1.54",
+    "Clipart -> Art": "Seen:     37.30 \u00b1 1.10\nUnseen:   26.90 \u00b1 1.01\nH-mean:   31.19 \u00b1 0.75",
+    "Clipart -> Product": "Seen:     71.04 \u00b1 0.72\nUnseen:   45.94 \u00b1 1.21\nH-mean:   55.76 \u00b1 0.98",
+    "Clipart -> RealWorld": "Seen:     68.39 \u00b1 0.90\nUnseen:   45.52 \u00b1 0.74\nH-mean:   54.62 \u00b1 0.49",
+    "Product -> Art": "Seen:     39.87 \u00b1 1.47\nUnseen:   40.41 \u00b1 1.35\nH-mean:   40.10 \u00b1 1.28",
+    "Product -> Clipart": "Seen:     55.98 \u00b1 0.60\nUnseen:   36.27 \u00b1 0.87\nH-mean:   44.00 \u00b1 0.76",
+    "Product -> RealWorld": "Seen:     69.27 \u00b1 0.87\nUnseen:   68.39 \u00b1 1.21\nH-mean:   68.77 \u00b1 0.44",
+    "RealWorld -> Art": "Seen:     39.65 \u00b1 1.18\nUnseen:   52.37 \u00b1 1.29\nH-mean:   45.10 \u00b1 1.09",
+    "RealWorld -> Clipart": "Seen:     56.06 \u00b1 0.97\nUnseen:   42.54 \u00b1 0.91\nH-mean:   48.33 \u00b1 0.62",
+    "RealWorld -> Product": "Seen:     74.66 \u00b1 0.64\nUnseen:   75.81 \u00b1 0.86\nH-mean:   75.21 \u00b1 0.40"
+  },
+  "our_TUPL_real_plus_src2tgt_unseen": {
+    "Art -> Clipart": "Seen:     57.89 \u00b1 0.65\nUnseen:   14.20 \u00b1 0.75\nH-mean:   22.78 \u00b1 1.00",
+    "Art -> Product": "Seen:     76.15 \u00b1 0.93\nUnseen:   24.53 \u00b1 1.41\nH-mean:   37.03 \u00b1 1.68",
+    "Art -> RealWorld": "Seen:     71.02 \u00b1 1.00\nUnseen:   32.30 \u00b1 1.79\nH-mean:   44.32 \u00b1 1.81",
+    "Clipart -> Art": "Seen:     40.34 \u00b1 0.95\nUnseen:   7.44 \u00b1 0.58\nH-mean:   12.54 \u00b1 0.84",
+    "Clipart -> Product": "Seen:     72.80 \u00b1 0.82\nUnseen:   21.04 \u00b1 1.87\nH-mean:   32.50 \u00b1 2.40",
+    "Clipart -> RealWorld": "Seen:     71.42 \u00b1 1.29\nUnseen:   21.39 \u00b1 1.59\nH-mean:   32.82 \u00b1 1.97",
+    "Product -> Art": "Seen:     44.30 \u00b1 1.36\nUnseen:   14.39 \u00b1 1.47\nH-mean:   21.62 \u00b1 1.75",
+    "Product -> Clipart": "Seen:     58.12 \u00b1 0.73\nUnseen:   22.85 \u00b1 1.17\nH-mean:   32.75 \u00b1 1.26",
+    "Product -> RealWorld": "Seen:     72.27 \u00b1 0.77\nUnseen:   49.83 \u00b1 1.94\nH-mean:   58.93 \u00b1 1.60",
+    "RealWorld -> Art": "Seen:     41.65 \u00b1 1.00\nUnseen:   22.94 \u00b1 0.49\nH-mean:   29.59 \u00b1 0.66",
+    "RealWorld -> Clipart": "Seen:     57.25 \u00b1 0.81\nUnseen:   24.04 \u00b1 1.58\nH-mean:   33.78 \u00b1 1.61",
+    "RealWorld -> Product": "Seen:     75.21 \u00b1 0.68\nUnseen:   54.19 \u00b1 2.58\nH-mean:   62.89 \u00b1 1.95"
+  },
+  "our_TUPL_interp_src2tgt": {
+    "Art -> Clipart": "Seen:     55.69 \u00b1 0.84\nUnseen:   33.16 \u00b1 1.28\nH-mean:   41.51 \u00b1 1.06",
+    "Art -> Product": "Seen:     73.05 \u00b1 0.86\nUnseen:   49.91 \u00b1 0.72\nH-mean:   59.29 \u00b1 0.64",
+    "Art -> RealWorld": "Seen:     66.69 \u00b1 0.83\nUnseen:   58.36 \u00b1 0.30\nH-mean:   62.24 \u00b1 0.45",
+    "Clipart -> Art": "Seen:     37.81 \u00b1 1.27\nUnseen:   40.35 \u00b1 1.53\nH-mean:   38.89 \u00b1 0.80",
+    "Clipart -> Product": "Seen:     70.73 \u00b1 0.60\nUnseen:   53.69 \u00b1 1.07\nH-mean:   61.01 \u00b1 0.62",
+    "Clipart -> RealWorld": "Seen:     67.02 \u00b1 1.15\nUnseen:   52.76 \u00b1 1.58\nH-mean:   58.93 \u00b1 0.67",
+    "Product -> Art": "Seen:     43.24 \u00b1 1.04\nUnseen:   49.22 \u00b1 1.36\nH-mean:   45.93 \u00b1 0.40",
+    "Product -> Clipart": "Seen:     57.97 \u00b1 0.56\nUnseen:   40.32 \u00b1 1.09\nH-mean:   47.54 \u00b1 0.87",
+    "Product -> RealWorld": "Seen:     71.23 \u00b1 0.83\nUnseen:   72.46 \u00b1 1.13\nH-mean:   71.80 \u00b1 0.57",
+    "RealWorld -> Art": "Seen:     40.07 \u00b1 0.93\nUnseen:   61.94 \u00b1 1.01\nH-mean:   48.64 \u00b1 0.88",
+    "RealWorld -> Clipart": "Seen:     57.28 \u00b1 1.26\nUnseen:   48.16 \u00b1 0.89\nH-mean:   52.27 \u00b1 0.62",
+    "RealWorld -> Product": "Seen:     75.40 \u00b1 0.99\nUnseen:   77.67 \u00b1 1.42\nH-mean:   76.45 \u00b1 0.51"
   }
 }
