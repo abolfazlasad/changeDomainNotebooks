@@ -8,6 +8,7 @@ import torch.nn.functional as F
 from torch.autograd import Function
 from sklearn.preprocessing import normalize
 from torch.utils.data import DataLoader, Dataset
+from tqdm.auto import tqdm
 
 from src.models import VAE2, Classifier
 
@@ -256,20 +257,34 @@ def prepare_report(results):
 
 def run_all_senario(main, DOMAIN_SET, input_dim=2048, num_trial=5):
     senario_report_map = dict()
-    for s in range(len(DOMAIN_SET)):
-        for t in range(len(DOMAIN_SET)):
-            if s == t:
-                continue
-            senario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])
-            print(senario)
-            results = []
-            for i in range(num_trial):
-                args = get_args(trialIndex=i, sourceDomainIndex=s, targetDomainIndex=t, input_dim=input_dim)
-                res = main(args)
-                results.append(res)
-            report = prepare_report(results)
-            senario_report_map[senario] = report
-            print(report)
+    pairs = [
+        (s, t)
+        for s in range(len(DOMAIN_SET))
+        for t in range(len(DOMAIN_SET))
+        if s != t
+    ]
+    pbar = tqdm(total=len(pairs) * num_trial, desc="episodes", unit="run")
+    for s, t in pairs:
+        senario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])
+        results = []
+        for i in range(num_trial):
+            pbar.set_postfix_str("%s trial %d" % (senario, i))
+            args = get_args(trialIndex=i, sourceDomainIndex=s, targetDomainIndex=t, input_dim=input_dim)
+            res = main(args)
+            results.append(res)
+            acc_s = float(res[2])
+            acc_u = float(res[3])
+            h = 0.0 if (acc_s + acc_u) == 0 else 2 * acc_s * acc_u / (acc_s + acc_u)
+            tqdm.write(
+                "%s trial %d  seen:%6.2f  unseen:%6.2f  H:%6.2f"
+                % (senario, i, acc_s * 100, acc_u * 100, h * 100)
+            )
+            pbar.update(1)
+        report = prepare_report(results)
+        senario_report_map[senario] = report
+        print(senario)
+        print(report)
+    pbar.close()
     return senario_report_map
 
 class BaseTwoModalDataset(Dataset):
