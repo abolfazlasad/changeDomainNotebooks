@@ -1,0 +1,74 @@
+{
+  "base": {
+    "all_but_angry -> angry": "Seen:     100.00 \u00b1 0.00\nUnseen:   91.67 \u00b1 2.58\nH-mean:   95.56 \u00b1 1.40",
+    "all_but_childlike -> childlike": "Seen:     95.83 \u00b1 2.08\nUnseen:   91.18 \u00b1 2.11\nH-mean:   93.28 \u00b1 1.12",
+    "all_but_depressed -> depressed": "Seen:     95.74 \u00b1 1.65\nUnseen:   73.82 \u00b1 7.28\nH-mean:   82.17 \u00b1 5.11",
+    "all_but_neutral -> neutral": "Seen:     100.00 \u00b1 0.00\nUnseen:   93.55 \u00b1 1.75\nH-mean:   96.62 \u00b1 0.94",
+    "all_but_old -> old": "Seen:     99.36 \u00b1 0.64\nUnseen:   64.93 \u00b1 5.48\nH-mean:   77.80 \u00b1 3.99",
+    "all_but_proud -> proud": "Seen:     100.00 \u00b1 0.00\nUnseen:   92.81 \u00b1 2.16\nH-mean:   96.20 \u00b1 1.16",
+    "all_but_strutting -> strutting": "Seen:     100.00 \u00b1 0.00\nUnseen:   62.21 \u00b1 12.02\nH-mean:   73.07 \u00b1 9.94"
+  },
+  "CCVAE": {
+    "all_but_angry -> angry": "Seen:     100.00 \u00b1 0.00\nUnseen:   85.52 \u00b1 4.35\nH-mean:   91.90 \u00b1 2.53",
+    "all_but_childlike -> childlike": "Seen:     94.44 \u00b1 2.73\nUnseen:   84.33 \u00b1 3.56\nH-mean:   88.76 \u00b1 2.05",
+    "all_but_depressed -> depressed": "Seen:     95.74 \u00b1 1.65\nUnseen:   75.94 \u00b1 5.93\nH-mean:   83.94 \u00b1 3.97",
+    "all_but_neutral -> neutral": "Seen:     100.00 \u00b1 0.00\nUnseen:   91.27 \u00b1 2.23\nH-mean:   95.37 \u00b1 1.23",
+    "all_but_old -> old": "Seen:     98.43 \u00b1 1.02\nUnseen:   66.08 \u00b1 6.44\nH-mean:   78.07 \u00b1 4.70",
+    "all_but_proud -> proud": "Seen:     100.00 \u00b1 0.00\nUnseen:   91.97 \u00b1 2.52\nH-mean:   95.73 \u00b1 1.36",
+    "all_but_strutting -> strutting": "Seen:     100.00 \u00b1 0.00\nUnseen:   63.46 \u00b1 12.30\nH-mean:   73.81 \u00b1 10.36"
+  },
+  "our0": {
+    "all_but_angry -> angry": "Seen:     100.00 \u00b1 0.00\nUnseen:   94.44 \u00b1 1.67\nH-mean:   97.10 \u00b1 0.89",
+    "all_but_childlike -> childlike": "Seen:     93.06 \u00b1 3.79\nUnseen:   95.36 \u00b1 0.74\nH-mean:   94.01 \u00b1 2.16",
+    "all_but_depressed -> depressed": "Seen:     94.15 \u00b1 2.40\nUnseen:   91.29 \u00b1 2.69\nH-mean:   92.44 \u00b1 1.38",
+    "all_but_neutral -> neutral": "Seen:     96.88 \u00b1 2.13\nUnseen:   95.67 \u00b1 0.96\nH-mean:   96.14 \u00b1 0.68",
+    "all_but_old -> old": "Seen:     98.43 \u00b1 1.02\nUnseen:   82.62 \u00b1 3.76\nH-mean:   89.52 \u00b1 2.02",
+    "all_but_proud -> proud": "Seen:     100.00 \u00b1 0.00\nUnseen:   96.01 \u00b1 1.38\nH-mean:   97.94 \u00b1 0.72",
+    "all_but_strutting -> strutting": "Seen:     100.00 \u00b1 0.00\nUnseen:   78.99 \u00b1 8.36\nH-mean:   86.97 \u00b1 5.52"
+  },
+  "our_GRE": {
+    "all_but_angry -> angry": "Seen:     99.07 \u00b1 0.93\nUnseen:   94.10 \u00b1 1.65\nH-mean:   96.48 \u00b1 1.00",
+    "all_but_childlike -> childlike": "Seen:     93.06 \u00b1 3.79\nUnseen:   95.36 \u00b1 0.74\nH-mean:   94.01 \u00b1 2.16",
+    "all_but_depressed -> depressed": "Seen:     94.15 \u00b1 2.40\nUnseen:   86.16 \u00b1 4.83\nH-mean:   89.34 \u00b1 2.44",
+    "all_but_neutral -> neutral": "Seen:     96.88 \u00b1 2.13\nUnseen:   95.67 \u00b1 0.96\nH-mean:   96.14 \u00b1 0.68",
+    "all_but_old -> old": "Seen:     98.43 \u00b1 1.02\nUnseen:   83.24 \u00b1 3.47\nH-mean:   89.93 \u00b1 1.83",
+    "all_but_proud -> proud": "Seen:     100.00 \u00b1 0.00\nUnseen:   95.39 \u00b1 1.98\nH-mean:   97.59 \u00b1 1.05",
+    "all_but_strutting -> strutting": "Seen:     100.00 \u00b1 0.00\nUnseen:   73.34 \u00b1 9.17\nH-mean:   82.87 \u00b1 6.68"
+  },
+  "TUPL": {
+    "all_but_angry -> angry": "Seen:     94.79 \u00b1 4.09\nUnseen:   45.24 \u00b1 5.09\nH-mean:   60.57 \u00b1 4.98",
+    "all_but_childlike -> childlike": "Seen:     90.05 \u00b1 2.75\nUnseen:   36.11 \u00b1 4.63\nH-mean:   50.61 \u00b1 4.90",
+    "all_but_depressed -> depressed": "Seen:     93.40 \u00b1 1.10\nUnseen:   51.80 \u00b1 10.01\nH-mean:   63.70 \u00b1 7.42",
+    "all_but_neutral -> neutral": "Seen:     96.52 \u00b1 1.63\nUnseen:   40.15 \u00b1 9.11\nH-mean:   54.07 \u00b1 8.75",
+    "all_but_old -> old": "Seen:     86.82 \u00b1 4.29\nUnseen:   41.48 \u00b1 4.71\nH-mean:   54.89 \u00b1 3.85",
+    "all_but_proud -> proud": "Seen:     94.84 \u00b1 2.70\nUnseen:   67.09 \u00b1 7.25\nH-mean:   77.62 \u00b1 5.61",
+    "all_but_strutting -> strutting": "Seen:     94.86 \u00b1 2.36\nUnseen:   45.56 \u00b1 3.39\nH-mean:   61.15 \u00b1 2.96"
+  },
+  "our_TUPL_real_plus_src2tgt": {
+    "all_but_angry -> angry": "Seen:     96.93 \u00b1 1.40\nUnseen:   33.98 \u00b1 7.28\nH-mean:   48.42 \u00b1 7.45",
+    "all_but_childlike -> childlike": "Seen:     86.11 \u00b1 4.98\nUnseen:   38.78 \u00b1 5.42\nH-mean:   51.56 \u00b1 4.52",
+    "all_but_depressed -> depressed": "Seen:     84.99 \u00b1 3.71\nUnseen:   30.98 \u00b1 6.18\nH-mean:   43.08 \u00b1 6.97",
+    "all_but_neutral -> neutral": "Seen:     77.20 \u00b1 4.12\nUnseen:   32.13 \u00b1 5.86\nH-mean:   43.78 \u00b1 6.06",
+    "all_but_old -> old": "Seen:     83.09 \u00b1 5.34\nUnseen:   37.09 \u00b1 7.12\nH-mean:   47.82 \u00b1 5.02",
+    "all_but_proud -> proud": "Seen:     83.73 \u00b1 3.90\nUnseen:   30.63 \u00b1 5.54\nH-mean:   44.00 \u00b1 6.53",
+    "all_but_strutting -> strutting": "Seen:     84.76 \u00b1 5.84\nUnseen:   30.92 \u00b1 7.81\nH-mean:   42.07 \u00b1 9.51"
+  },
+  "our_TUPL_real_plus_src2tgt_unseen": {
+    "all_but_angry -> angry": "Seen:     99.17 \u00b1 0.83\nUnseen:   45.91 \u00b1 3.19\nH-mean:   62.39 \u00b1 3.03",
+    "all_but_childlike -> childlike": "Seen:     87.50 \u00b1 6.74\nUnseen:   43.05 \u00b1 3.41\nH-mean:   56.23 \u00b1 2.16",
+    "all_but_depressed -> depressed": "Seen:     93.42 \u00b1 2.52\nUnseen:   45.32 \u00b1 2.02\nH-mean:   60.89 \u00b1 2.05",
+    "all_but_neutral -> neutral": "Seen:     95.08 \u00b1 2.98\nUnseen:   40.85 \u00b1 2.57\nH-mean:   57.00 \u00b1 2.83",
+    "all_but_old -> old": "Seen:     91.59 \u00b1 5.29\nUnseen:   49.66 \u00b1 5.02\nH-mean:   63.57 \u00b1 4.64",
+    "all_but_proud -> proud": "Seen:     97.07 \u00b1 1.37\nUnseen:   49.35 \u00b1 2.45\nH-mean:   65.17 \u00b1 1.85",
+    "all_but_strutting -> strutting": "Seen:     90.00 \u00b1 3.50\nUnseen:   48.26 \u00b1 5.07\nH-mean:   61.75 \u00b1 4.46"
+  },
+  "our_TUPL_interp_src2tgt": {
+    "all_but_angry -> angry": "Seen:     94.70 \u00b1 2.75\nUnseen:   51.70 \u00b1 8.17\nH-mean:   64.45 \u00b1 7.42",
+    "all_but_childlike -> childlike": "Seen:     91.32 \u00b1 4.11\nUnseen:   55.65 \u00b1 8.87\nH-mean:   65.93 \u00b1 6.19",
+    "all_but_depressed -> depressed": "Seen:     91.57 \u00b1 3.05\nUnseen:   43.30 \u00b1 6.52\nH-mean:   57.04 \u00b1 6.09",
+    "all_but_neutral -> neutral": "Seen:     95.08 \u00b1 2.50\nUnseen:   48.67 \u00b1 8.68\nH-mean:   61.97 \u00b1 8.79",
+    "all_but_old -> old": "Seen:     91.28 \u00b1 3.72\nUnseen:   57.04 \u00b1 5.98\nH-mean:   68.91 \u00b1 4.23",
+    "all_but_proud -> proud": "Seen:     95.34 \u00b1 1.93\nUnseen:   60.23 \u00b1 10.46\nH-mean:   71.32 \u00b1 9.17",
+    "all_but_strutting -> strutting": "Seen:     85.49 \u00b1 5.70\nUnseen:   45.63 \u00b1 6.38\nH-mean:   58.20 \u00b1 6.40"
+  }
+}

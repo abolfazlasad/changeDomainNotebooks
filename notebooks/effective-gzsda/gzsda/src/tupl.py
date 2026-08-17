@@ -102,6 +102,23 @@ DATASET_CONFIGS = {
         },
         "split_file_name": "instanceSplit_actionStyle_unseen2.mat",
     },
+    "actionstyle_v2": {
+        "subdir": "ActionStyleDataset_v2/",
+        "domain_set": [
+            "all_but_angry", "all_but_childlike", "all_but_depressed",
+            "all_but_neutral", "all_but_old", "all_but_proud", "all_but_strutting",
+            "angry", "childlike", "depressed", "neutral",
+            "old", "proud", "strutting",
+        ],
+        "backbones": {
+            "clip": {
+                "prefix": "ActionStyle-",
+                "suffix": "-clip.mat",
+                "resnet_feature": "clip_features",
+            },
+        },
+        "split_file_name": "instanceSplit_actionStyle_v2_unseen2.mat",
+    },
 }
 
 # Result file names aligned with refactored-*.ipynb / result/csv|json
@@ -110,6 +127,7 @@ DATASET_RESULT_NAMES = {
     "officehome": "officeHome",
     "xraybaggage20": "xray",
     "actionstyle": "actionStyle",
+    "actionstyle_v2": "actionStyle_v2",
 }
 
 

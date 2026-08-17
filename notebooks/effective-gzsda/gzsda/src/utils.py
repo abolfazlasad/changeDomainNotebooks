@@ -255,14 +255,17 @@ def prepare_report(results):
         f"Unseen:   {mean_unseen:.2f} ± {sem_unseen:.2f}" + "\n"
         f"H-mean:   {mean_h:.2f} ± {sem_h:.2f}")
 
-def run_all_senario(main, DOMAIN_SET, input_dim=2048, num_trial=5):
+def run_all_senario(main, DOMAIN_SET, input_dim=2048, num_trial=5, pairs=None):
     senario_report_map = dict()
-    pairs = [
-        (s, t)
-        for s in range(len(DOMAIN_SET))
-        for t in range(len(DOMAIN_SET))
-        if s != t
-    ]
+    if pairs is None:
+        pairs = [
+            (s, t)
+            for s in range(len(DOMAIN_SET))
+            for t in range(len(DOMAIN_SET))
+            if s != t
+        ]
+    else:
+        pairs = list(pairs)
     pbar = tqdm(total=len(pairs) * num_trial, desc="episodes", unit="run")
     for s, t in pairs:
         senario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])

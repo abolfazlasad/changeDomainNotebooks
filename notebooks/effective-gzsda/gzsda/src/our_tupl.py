@@ -297,6 +297,7 @@ def run_all_senario_m1_tupl(
     method_prefix: str = METHOD_PREFIX,
     device=None,
     quiet: bool = False,
+    pairs=None,
     **tupl_kwargs,
 ) -> Dict[str, Dict[str, str]]:
     """All domain pairs × trials; VAE trained once per episode, all policies evaluated.
@@ -306,42 +307,49 @@ def run_all_senario_m1_tupl(
     device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
     trial_rows: Dict[str, Dict[str, List[Tuple]]] = {p: {} for p in policies}
 
-    for s in range(len(DOMAIN_SET)):
-        for t in range(len(DOMAIN_SET)):
-            if s == t:
-                continue
-            scenario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])
-            print(scenario)
-            for policy in policies:
-                trial_rows[policy][scenario] = []
+    if pairs is None:
+        pairs = [
+            (s, t)
+            for s in range(len(DOMAIN_SET))
+            for t in range(len(DOMAIN_SET))
+            if s != t
+        ]
+    else:
+        pairs = list(pairs)
 
-            for i in range(num_trial):
-                args = get_args(
-                    trialIndex=i,
-                    sourceDomainIndex=s,
-                    targetDomainIndex=t,
-                    input_dim=input_dim,
-                )
-                set_seed(args)
-                metrics = run_m1_tupl_policies(
-                    args,
-                    DOMAIN_SET,
-                    DATA_DIR,
-                    DATASET_DETAILS,
-                    policies=policies,
-                    device=device,
-                    quiet=quiet,
-                    **tupl_kwargs,
-                )
-                for policy, (acc_s, acc_u, _h) in metrics.items():
-                    trial_rows[policy][scenario].append(
-                        (None, None, acc_s / 100.0, acc_u / 100.0)
-                    )
+    for s, t in pairs:
+        scenario = "%s -> %s" % (DOMAIN_SET[s], DOMAIN_SET[t])
+        print(scenario)
+        for policy in policies:
+            trial_rows[policy][scenario] = []
 
-            for policy in policies:
-                report = prepare_report(trial_rows[policy][scenario])
-                print(f"{method_prefix}_{policy}")
-                print(report)
+        for i in range(num_trial):
+            args = get_args(
+                trialIndex=i,
+                sourceDomainIndex=s,
+                targetDomainIndex=t,
+                input_dim=input_dim,
+            )
+            set_seed(args)
+            metrics = run_m1_tupl_policies(
+                args,
+                DOMAIN_SET,
+                DATA_DIR,
+                DATASET_DETAILS,
+                policies=policies,
+                device=device,
+                quiet=quiet,
+                **tupl_kwargs,
+            )
+            for policy, (acc_s, acc_u, _h) in metrics.items():
+                trial_rows[policy][scenario].append(
+                    (None, None, acc_s / 100.0, acc_u / 100.0)
+                )
+
+        for policy in policies:
+            report = prepare_report(trial_rows[policy][scenario])
+            print(f"{method_prefix}_{policy}")
+            print(report)
 
     result: Dict[str, Dict[str, str]] = {}
     for policy in policies:
