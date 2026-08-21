@@ -7,28 +7,28 @@
     "regu -> xray": "Seen:     77.56 \u00b1 2.11\nUnseen:   29.50 \u00b1 2.95\nH-mean:   42.50 \u00b1 3.44",
     "xray -> regu": "Seen:     90.67 \u00b1 1.01\nUnseen:   52.01 \u00b1 2.86\nH-mean:   65.88 \u00b1 2.29"
   },
-  "our_GRE": {
-    "regu -> xray": "Seen:     72.31 \u00b1 2.45\nUnseen:   32.77 \u00b1 1.47\nH-mean:   45.05 \u00b1 1.68",
-    "xray -> regu": "Seen:     86.87 \u00b1 0.75\nUnseen:   55.23 \u00b1 2.16\nH-mean:   67.41 \u00b1 1.54"
-  },
   "our0": {
     "regu -> xray": "Seen:     74.19 \u00b1 2.29\nUnseen:   33.84 \u00b1 3.04\nH-mean:   46.23 \u00b1 3.23",
     "xray -> regu": "Seen:     87.35 \u00b1 1.03\nUnseen:   54.64 \u00b1 2.74\nH-mean:   67.02 \u00b1 1.96"
+  },
+  "our_GRE": {
+    "regu -> xray": "Seen:     72.31 \u00b1 2.45\nUnseen:   32.77 \u00b1 1.47\nH-mean:   45.05 \u00b1 1.68",
+    "xray -> regu": "Seen:     86.87 \u00b1 0.75\nUnseen:   55.23 \u00b1 2.16\nH-mean:   67.41 \u00b1 1.54"
   },
   "TUPL": {
     "regu -> xray": "Seen:     81.00 \u00b1 1.52\nUnseen:   10.46 \u00b1 1.36\nH-mean:   18.37 \u00b1 2.14",
     "xray -> regu": "Seen:     87.74 \u00b1 1.67\nUnseen:   30.38 \u00b1 4.43\nH-mean:   44.38 \u00b1 4.84"
   },
   "our_TUPL_real_plus_src2tgt": {
-    "regu -> xray": "Seen:     68.50 \u00b1 2.32\nUnseen:   16.81 \u00b1 1.89\nH-mean:   26.76 \u00b1 2.41",
-    "xray -> regu": "Seen:     83.52 \u00b1 2.02\nUnseen:   22.12 \u00b1 1.80\nH-mean:   34.88 \u00b1 2.46"
+    "regu -> xray": "Seen:     68.84 \u00b1 2.20\nUnseen:   16.79 \u00b1 1.46\nH-mean:   26.84 \u00b1 1.78",
+    "xray -> regu": "Seen:     84.03 \u00b1 2.03\nUnseen:   22.37 \u00b1 1.41\nH-mean:   35.26 \u00b1 1.89"
   },
   "our_TUPL_real_plus_src2tgt_unseen": {
-    "regu -> xray": "Seen:     76.31 \u00b1 2.07\nUnseen:   9.05 \u00b1 1.18\nH-mean:   16.10 \u00b1 1.93",
-    "xray -> regu": "Seen:     87.08 \u00b1 1.59\nUnseen:   10.46 \u00b1 0.65\nH-mean:   18.65 \u00b1 1.05"
+    "regu -> xray": "Seen:     76.19 \u00b1 2.05\nUnseen:   8.68 \u00b1 0.87\nH-mean:   15.54 \u00b1 1.44",
+    "xray -> regu": "Seen:     87.13 \u00b1 1.55\nUnseen:   11.46 \u00b1 1.60\nH-mean:   20.13 \u00b1 2.57"
   },
   "our_TUPL_interp_src2tgt": {
-    "regu -> xray": "Seen:     67.32 \u00b1 2.81\nUnseen:   19.19 \u00b1 1.28\nH-mean:   29.79 \u00b1 1.70",
-    "xray -> regu": "Seen:     82.39 \u00b1 2.18\nUnseen:   30.62 \u00b1 3.51\nH-mean:   44.27 \u00b1 4.12"
+    "regu -> xray": "Seen:     68.62 \u00b1 2.61\nUnseen:   19.00 \u00b1 0.86\nH-mean:   29.74 \u00b1 1.26",
+    "xray -> regu": "Seen:     82.31 \u00b1 2.33\nUnseen:   29.50 \u00b1 3.69\nH-mean:   43.05 \u00b1 4.51"
   }
 }

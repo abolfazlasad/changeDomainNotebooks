@@ -1,0 +1,6 @@
+method,n_senario,n_trial,total_trial,total_time
+base,6,5,30,43.4
+CCVAE,6,5,30,221.1
+our_GRE,6,5,30,229.2
+TUPL,6,5,30,73.5
+our_TUPL_interp_src2tgt,6,5,30,222.8

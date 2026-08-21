@@ -247,10 +247,12 @@ def run_m1_tupl_policies(
     Returns percent (Accs, Accu, H) per policy, matching ``TUPL.evaluate``.
     """
     device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    set_seed(args)
     raw, views = _prepare_episode(args, DOMAIN_SET, DATA_DIR, DATASET_DETAILS, device)
 
     metrics: Dict[str, Tuple[float, float, float]] = {}
     for policy in policies:
+        set_seed(args)
         data = build_tupl_data(policy, raw, views)
         acc_s, acc_u, h = _fit_evaluate_tupl(data, device=device, **tupl_kwargs)
         metrics[policy] = (acc_s, acc_u, h)

@@ -40,27 +40,27 @@
     "W -> D": "Seen:     100.00 \u00b1 0.00\nUnseen:   98.47 \u00b1 0.58\nH-mean:   99.23 \u00b1 0.29"
   },
   "our_TUPL_real_plus_src2tgt": {
-    "A -> D": "Seen:     55.62 \u00b1 2.55\nUnseen:   45.87 \u00b1 2.09\nH-mean:   50.18 \u00b1 2.00",
-    "A -> W": "Seen:     60.81 \u00b1 2.35\nUnseen:   35.93 \u00b1 2.39\nH-mean:   44.83 \u00b1 1.87",
-    "D -> A": "Seen:     34.61 \u00b1 2.28\nUnseen:   0.54 \u00b1 0.11\nH-mean:   1.07 \u00b1 0.21",
-    "D -> W": "Seen:     42.41 \u00b1 2.06\nUnseen:   5.14 \u00b1 1.16\nH-mean:   9.01 \u00b1 1.84",
-    "W -> A": "Seen:     21.30 \u00b1 1.16\nUnseen:   0.09 \u00b1 0.06\nH-mean:   0.18 \u00b1 0.11",
-    "W -> D": "Seen:     24.44 \u00b1 2.49\nUnseen:   1.65 \u00b1 0.76\nH-mean:   2.95 \u00b1 1.35"
+    "A -> D": "Seen:     55.48 \u00b1 2.72\nUnseen:   42.39 \u00b1 2.65\nH-mean:   47.82 \u00b1 2.15",
+    "A -> W": "Seen:     61.86 \u00b1 2.42\nUnseen:   36.42 \u00b1 1.85\nH-mean:   45.57 \u00b1 1.25",
+    "D -> A": "Seen:     34.73 \u00b1 2.24\nUnseen:   0.48 \u00b1 0.08\nH-mean:   0.94 \u00b1 0.16",
+    "D -> W": "Seen:     42.86 \u00b1 2.01\nUnseen:   4.13 \u00b1 0.80\nH-mean:   7.47 \u00b1 1.36",
+    "W -> A": "Seen:     21.28 \u00b1 1.17\nUnseen:   0.04 \u00b1 0.04\nH-mean:   0.07 \u00b1 0.07",
+    "W -> D": "Seen:     24.62 \u00b1 2.50\nUnseen:   1.30 \u00b1 0.65\nH-mean:   2.38 \u00b1 1.17"
   },
   "our_TUPL_real_plus_src2tgt_unseen": {
-    "A -> D": "Seen:     62.82 \u00b1 1.59\nUnseen:   10.58 \u00b1 1.95\nH-mean:   17.77 \u00b1 2.83",
-    "A -> W": "Seen:     65.53 \u00b1 2.13\nUnseen:   9.84 \u00b1 1.90\nH-mean:   16.88 \u00b1 2.96",
-    "D -> A": "Seen:     80.19 \u00b1 1.21\nUnseen:   5.08 \u00b1 0.12\nH-mean:   9.56 \u00b1 0.22",
-    "D -> W": "Seen:     96.01 \u00b1 1.22\nUnseen:   16.92 \u00b1 0.65\nH-mean:   28.75 \u00b1 0.97",
-    "W -> A": "Seen:     69.45 \u00b1 1.64\nUnseen:   1.43 \u00b1 0.24\nH-mean:   2.80 \u00b1 0.46",
-    "W -> D": "Seen:     97.04 \u00b1 1.01\nUnseen:   11.68 \u00b1 1.75\nH-mean:   20.68 \u00b1 2.85"
+    "A -> D": "Seen:     63.05 \u00b1 1.53\nUnseen:   9.90 \u00b1 1.87\nH-mean:   16.79 \u00b1 2.66",
+    "A -> W": "Seen:     66.18 \u00b1 2.20\nUnseen:   11.59 \u00b1 2.87\nH-mean:   19.24 \u00b1 3.96",
+    "D -> A": "Seen:     80.13 \u00b1 1.21\nUnseen:   5.04 \u00b1 0.27\nH-mean:   9.48 \u00b1 0.48",
+    "D -> W": "Seen:     96.01 \u00b1 1.22\nUnseen:   16.94 \u00b1 1.25\nH-mean:   28.73 \u00b1 1.86",
+    "W -> A": "Seen:     69.49 \u00b1 1.64\nUnseen:   1.56 \u00b1 0.24\nH-mean:   3.04 \u00b1 0.45",
+    "W -> D": "Seen:     97.04 \u00b1 1.01\nUnseen:   11.63 \u00b1 1.06\nH-mean:   20.71 \u00b1 1.67"
   },
   "our_TUPL_interp_src2tgt": {
-    "A -> D": "Seen:     56.19 \u00b1 3.77\nUnseen:   60.01 \u00b1 4.11\nH-mean:   57.55 \u00b1 3.16",
-    "A -> W": "Seen:     60.39 \u00b1 2.39\nUnseen:   52.94 \u00b1 1.79\nH-mean:   56.14 \u00b1 0.72",
-    "D -> A": "Seen:     76.28 \u00b1 1.48\nUnseen:   53.29 \u00b1 2.10\nH-mean:   62.55 \u00b1 1.16",
-    "D -> W": "Seen:     97.80 \u00b1 0.17\nUnseen:   99.01 \u00b1 0.13\nH-mean:   98.40 \u00b1 0.05",
-    "W -> A": "Seen:     73.26 \u00b1 1.52\nUnseen:   46.10 \u00b1 2.50\nH-mean:   56.31 \u00b1 1.46",
-    "W -> D": "Seen:     99.03 \u00b1 0.52\nUnseen:   100.00 \u00b1 0.00\nH-mean:   99.51 \u00b1 0.26"
+    "A -> D": "Seen:     55.79 \u00b1 3.63\nUnseen:   57.22 \u00b1 3.38\nH-mean:   56.05 \u00b1 2.59",
+    "A -> W": "Seen:     59.71 \u00b1 2.24\nUnseen:   51.39 \u00b1 2.95\nH-mean:   54.87 \u00b1 1.62",
+    "D -> A": "Seen:     76.02 \u00b1 1.37\nUnseen:   52.82 \u00b1 2.17\nH-mean:   62.14 \u00b1 1.26",
+    "D -> W": "Seen:     97.73 \u00b1 0.18\nUnseen:   99.23 \u00b1 0.10\nH-mean:   98.47 \u00b1 0.07",
+    "W -> A": "Seen:     73.19 \u00b1 1.54\nUnseen:   46.69 \u00b1 2.56\nH-mean:   56.73 \u00b1 1.57",
+    "W -> D": "Seen:     98.78 \u00b1 0.46\nUnseen:   99.85 \u00b1 0.15\nH-mean:   99.31 \u00b1 0.29"
   }
 }
